@@ -33,3 +33,21 @@ function initMap() {
                               'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
       }
+
+
+// ----- DÖLJER SECTIONEN FÖR RESTAURANGRESULTATEN & VISAR NÄR MAN TRYCKER PÅ SÖK -----
+    var searchBtn = document.querySelector("#searchBtn");
+    searchBtn.addEventListener("click", show);
+
+function show(){
+    var restaurantSection = document.querySelector("#portfolio");
+    var mapSection = document.querySelector("#contact");
+    var footerSection = document.querySelector("#footer");
+    
+    if(restaurantSection.className && mapSection.className && footerSection.className != "hide"){
+        restaurantSection.className = "show";
+        mapSection.className = "show";
+        footerSection.className = "show";
+        initMap();
+    }
+}

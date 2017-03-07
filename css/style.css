@@ -18,7 +18,39 @@
     
 }
 
-.btn {
+.ourBtn {
     margin: 2%;
     width: 15%;
+}
+
+#portfolio {
+    display: none;
+}
+
+#contact {
+    display: none;
+    height: 70%;
+}
+
+#footer {
+    display: none;
+}
+
+.hide{
+    display: none;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    height: 0px;
+}
+
+.show{
+    display: block;
+    opacity: 1;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.bla {
+    position: absolute;
+    left: 100%;
 }
